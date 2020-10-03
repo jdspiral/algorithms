@@ -1,6 +1,7 @@
 // --- Directions
 // Implement bubbleSort, selectionSort, and mergeSort
-
+//O(n2) -time
+//O(1) - space
 function bubbleSort(arr) {
   // Implement bubblesort
   for (let i = 0; i < arr.length; i++) {
@@ -17,11 +18,13 @@ function bubbleSort(arr) {
   return arr;
 }
 
+// O(n2)
+//
 function selectionSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     let indexOfMin = i;
 
-    for (let j = i+1; j <arr.length; j++) {
+    for (let j = i + 1; j <arr.length; j++) {
       if (arr[j] < arr[indexOfMin]) {
         indexOfMin = j;
       }
